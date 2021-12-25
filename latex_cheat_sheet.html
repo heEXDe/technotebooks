@@ -23,7 +23,39 @@
     <code>\begin{}</code><br><code>\end{}</code></p>
     <p>commands:<br>
     <code>\commandname[option1,option2,...]{argument1}{argument2}...</code></p>
-
+    <p>comment (single-line only): <br>
+    <code>% this is a comment ...</code></p>
+    <p>basic structure of every document in Latex: <br>
+    <code>\documentclass{...} <br>
+        \begin{document} <br>
+        ... <br>
+        \end{document}</code></p>
+    <p>The area between <code>\documentclass{...}</code> 
+        and <code>\begin{document}</code> is called the preamble.
+         It normally contains commands that affect the entire document.
+    </p>
+    <p>Layouts standards are set by the classes: <br>
+        <code>\documentclass[options]{class}</code> <br>
+        described in 'class files', which have <code>.cls</code> extension.
+    </p>
+    <p>
+        example: <br>
+        <code>\documentclass[11pt,twoside,a4paper]{article}</code><br>
+        article class, base font of 11 points size, double sided printing on A4 paper
+    </p>
+    <p>
+        Some of the classes: <br>
+        <code>article</code>	- For articles in scientific journals, presentations, short reports, program documentation, invitations, ... <br>
+        <code>IEEEtran</code> - For articles with the IEEE Transactions format. <br>
+        <code>proc</code> - A class for proceedings based on the article class. <br>
+        <code>minimal</code>	- It is as small as it can get. It only sets a page size and a base font. It is mainly used for debugging purposes. <br>
+        <code>report</code> - For longer reports containing several chapters, small books, thesis, ... <br>
+        <code>book</code> - For books. <br>
+        <code>slides</code> - For slides. The class uses big sans serif letters. <br>
+        <code>memoir</code> - For changing sensibly the output of the document. It is based on the book class, but you can create any kind of document with it <br>
+        <code>letter</code> - For writing letters. <br>
+        <code>beamer</code> - For writing presentations (see LaTeX/Presentations).
+    </p>
 </body>
 
 </html>
