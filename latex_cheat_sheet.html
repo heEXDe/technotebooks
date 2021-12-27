@@ -56,6 +56,21 @@
         <code>letter</code> - For writing letters. <br>
         <code>beamer</code> - For writing presentations (see LaTeX/Presentations).
     </p>
+    <p>
+        The most common class options:
+        <ul>
+            <li>10pt, 11pt, 12pt - main font size in the document; 10pt is assumed</li>
+            <li>a4paper, letterpaper ... - paper size; default size is letterpaper;other: a5paper, b5paper, executivepaper, and legalpaper</li>
+            <li>fleqn - Typesets displayed formulas left-aligned instead of centered.</li>
+            <li>leqno - Places the numbering of formulas on the left hand side instead of the right.</li>
+            <li>titlepage, notitlepage - whether a new page should be started after the document title or not. The article class does not start a new page by default, while report and book do.</li>
+            <li>twocolumn - Instructs LaTeX to typeset the document in two columns instead of one.</li>
+            <li>twoside, oneside - whether double or single sided output; classes 'article' and 'report' are single sided, 'book' is double sided; this option concerns the style of the document only, not the printed version</li>
+            <li>landscape - print in landscape mode</li>
+            <li>openright, openany - chapters begin either only on right hand pages or on the next page available; does not work with the 'article' class; the 'report' class by default starts chapters on the next page available and the 'book' class starts them on right hand pages</li>
+            <li>draft - makes LaTeX indicate hyphenation and justification problems with a small square in the right-hand margin of the problem line so they can be located quickly by a human; suppresses the inclusion of images</li>
+        </ul>
+    </p>
 </body>
 
 </html>
