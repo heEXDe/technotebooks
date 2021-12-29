@@ -5,22 +5,32 @@
 <style>
     body {background-color: darkslategray;}
     h1   {color: white;}
+    h3   {color: white;}
     p    {color: white;}
+    ul    {color: white;}
     </style>
 </head>
 <body>
     <h1>LaTex Cheat Sheet</h1>
-    <p>a comment:<br>
-        <code>% this is a comment</code></p>
-    <p>some special characters:<br>
+    <h3>a comment:</h3>
+    <p>
+        <code>% this is a comment</code>
+    </p>
+    <h3>some special characters:</h3>
+    <p>
          %  is <code>\%</code> ,
          &  is <code>\%</code> ,
          ~  is <code>\~{}</code> ,
-         {}  is <code>\{ \}</code></p>
-    <p>groups:<br>
-        beginning <code> \bgroup{} </code> , ending <code> \egroup{} </code></p>
-    <p>enviroments:<br>
-    <code>\begin{}</code><br><code>\end{}</code></p>
+         {}  is <code>\{ \}</code>
+    </p>
+    <h3>groups:</h3>
+    <p>
+        beginning <code> \bgroup{} </code> , ending <code> \egroup{} </code>
+    </p>
+    <h3>enviroments:</h3>
+    <p>
+        <code>\begin{}</code><br><code>\end{}</code>
+    </p>
     <p>commands:<br>
     <code>\commandname[option1,option2,...]{argument1}{argument2}...</code></p>
     <p>comment (single-line only): <br>
@@ -44,32 +54,73 @@
         article class, base font of 11 points size, double sided printing on A4 paper
     </p>
     <p>
-        Some of the classes: <br>
-        <code>article</code>	- For articles in scientific journals, presentations, short reports, program documentation, invitations, ... <br>
-        <code>IEEEtran</code> - For articles with the IEEE Transactions format. <br>
-        <code>proc</code> - A class for proceedings based on the article class. <br>
-        <code>minimal</code>	- It is as small as it can get. It only sets a page size and a base font. It is mainly used for debugging purposes. <br>
-        <code>report</code> - For longer reports containing several chapters, small books, thesis, ... <br>
-        <code>book</code> - For books. <br>
-        <code>slides</code> - For slides. The class uses big sans serif letters. <br>
-        <code>memoir</code> - For changing sensibly the output of the document. It is based on the book class, but you can create any kind of document with it <br>
-        <code>letter</code> - For writing letters. <br>
-        <code>beamer</code> - For writing presentations (see LaTeX/Presentations).
+        <h3>Some of the classes:</h3>
+        <ul>
+            <li><code>article</code>	- For articles in scientific journals, presentations, short reports, program documentation, invitations, ...</li>
+            <li><code>IEEEtran</code> - For articles with the IEEE Transactions format.</li>
+            <li><code>proc</code> - A class for proceedings based on the article class.</li>
+            <li><code>minimal</code>	- It is as small as it can get. It only sets a page size and a base font. It is mainly used for debugging purposes.</li>
+            <li><code>report</code> - For longer reports containing several chapters, small books, thesis, ...</li>
+            <li><code>book</code> - For books.</li>
+            <li><code>slides</code> - For slides. The class uses big sans serif letters.</li>
+            <li><code>memoir</code> - For changing sensibly the output of the document. It is based on the book class, but you can create any kind of document with it.</li>
+            <li><code>letter</code> - For writing letters.</li>
+            <li><code>beamer</code> - For writing presentations.</li>
+        </ul>
     </p>
     <p>
-        The most common class options:
+        <h3>The most common class options:</h3>
         <ul>
-            <li>10pt, 11pt, 12pt - main font size in the document; 10pt is assumed</li>
-            <li>a4paper, letterpaper ... - paper size; default size is letterpaper;other: a5paper, b5paper, executivepaper, and legalpaper</li>
-            <li>fleqn - Typesets displayed formulas left-aligned instead of centered.</li>
-            <li>leqno - Places the numbering of formulas on the left hand side instead of the right.</li>
-            <li>titlepage, notitlepage - whether a new page should be started after the document title or not. The article class does not start a new page by default, while report and book do.</li>
-            <li>twocolumn - Instructs LaTeX to typeset the document in two columns instead of one.</li>
-            <li>twoside, oneside - whether double or single sided output; classes 'article' and 'report' are single sided, 'book' is double sided; this option concerns the style of the document only, not the printed version</li>
-            <li>landscape - print in landscape mode</li>
-            <li>openright, openany - chapters begin either only on right hand pages or on the next page available; does not work with the 'article' class; the 'report' class by default starts chapters on the next page available and the 'book' class starts them on right hand pages</li>
-            <li>draft - makes LaTeX indicate hyphenation and justification problems with a small square in the right-hand margin of the problem line so they can be located quickly by a human; suppresses the inclusion of images</li>
+            <li><code>10pt, 11pt, 12pt</code> - main font size in the document; 10pt is assumed</li>
+            <li><code>a4paper, letterpaper ...</code> - paper size; default size is letterpaper;other: a5paper, b5paper, executivepaper, and legalpaper</li>
+            <li><code>fleqn</code> - Typesets displayed formulas left-aligned instead of centered.</li>
+            <li><code>leqno</code> - Places the numbering of formulas on the left hand side instead of the right.</li>
+            <li><code>titlepage, notitlepage</code> - whether a new page should be started after the document title or not. The article class does not start a new page by default, while report and book do.</li>
+            <li><code>twocolumn</code> - Instructs LaTeX to typeset the document in two columns instead of one.</li>
+            <li><code>twoside, oneside</code> - whether double or single sided output; classes 'article' and 'report' are single sided, 'book' is double sided; this option concerns the style of the document only, not the printed version</li>
+            <li><code>landscape</code> - print in landscape mode</li>
+            <li><code>openright, openany</code> - chapters begin either only on right hand pages or on the next page available; does not work with the 'article' class; the 'report' class by default starts chapters on the next page available and the 'book' class starts them on right hand pages</li>
+            <li><code>draft</code> - makes LaTeX indicate hyphenation and justification problems with a small square in the right-hand margin of the problem line so they can be located quickly by a human; suppresses the inclusion of images</li>
         </ul>
+    </p>
+    <h3>packages</h3>
+    <p>
+        To include graphics, colored text or source code from a file into a document, it is needed to use packages.
+        Some packages come with the LaTeX base distribution. <br>
+        The command to use a package: <br>
+        <code>\usepackage[options]{package}</code>
+    </p>
+    <p>
+        top matter - information at the beginning of most documents, such as: the title, date, information about the authors <br>
+        example: <br>
+        <code>
+            \documentclass[11pt,a4paper]{report} <br>
+            \begin{document} <br>
+            \title{How to Structure a LaTeX Document} <br>
+            \author{Andrew Roberts} <br>
+            \date{December 2004} <br>
+            \maketitle <br>
+            \end{document}
+        </code>
+        Always finish the top matter with the <code>\maketitle</code> command.
+    </p>
+    <h3>Sectioning commands</h3>
+    <p>
+        Certain commands are appropriate to different document classes (i.e.: a book has chapters but an article doesn't). <br>
+        <code>
+            \chapter{Introduction} <br>
+            This chapter's content... <br>
+            <br>
+            \section{Structure} <br>
+            This section's content... <br>
+            <br>
+            \subsection{Top Matter} <br>
+            This subsection's content... <br>
+            <br>
+            \subsubsection{Article Information} <br>
+            This subsubsection's content...
+        </code>
+
     </p>
 </body>
 
